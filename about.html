@@ -5,15 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>chrislangille - links</title>
     <link rel="icon" href="images/icons/favicon.png" />
-    <link rel="stylesheet" href="build/css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        safelist: ["hidden"],
+        theme: {
+          extend: {},
+        },
+      };
+    </script>
+    <style>
+      .nav-text {
+        font-size: x-large;
+      }
+    </style>
   </head>
-
-  <script>
-    function toggleDetails(box) {
-      const desc = box.querySelector(".job-description");
-      desc.classList.toggle("hidden");
-    }
-  </script>
 
   <body class="flex flex-col min-h-screen bg-gradient-to-t from-black to-gray-800">
     <!-- Header -->
