@@ -3,86 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>chrislangille - home</title>
-    <link rel="icon" href="images/icons/favicon.png" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        safelist: ["hidden"],
-        theme: {
-          extend: {},
-        },
-      };
-    </script>
-    <style>
-      .nav-text {
-        font-size: x-large;
-      }
-    </style>
+    <title>Chris Langille</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="flex flex-col min-h-screen bg-gradient-to-t from-black to-gray-800">
-    <!-- Header -->
-    <header>
-      <!-- Navbar -->
-      <nav class="flex justify-center bg-black shadow-lg m-0">
-        <ul class="text-white font-semibold flex p-2">
-          <li>
-            <a class="nav-text p-2 ml-2 mr-2 hover:text-gray-300 border-b-2" href="index.html">home</a>
-          </li>
-          <li>
-            <a class="nav-text p-2 ml-2 mr-2 hover:text-gray-300" href="projects.html">projects</a>
-          </li>
-          <li>
-            <a class="nav-text p-2 ml-2 mr-2 hover:text-gray-300" href="about.html">about</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <!-- Main content -->
-    <main class="grid grid-rows-2 md:mt-1.5 lg:mt-40">
-      <div class="grid grid-rows-auto justify-center m-5">
-        <h2 class="text-center text-gray-400 text-7xl font-semibold m-5">
-          Hello, I'm <b class="text-white">Chris Langille</b>
-        </h2>
-        <h3 class="text-center text-white text-xl font-semibold m-5">
-          I recently graduated from <b>Dalhousie University</b> with a Bachelor of Computer Science and am
-          currently seeking opportunities to begin my career in tech.
-        </h3>
-
-        <div class="flex justify-center mt-4">
-          <div class="flex bg-white rounded-3xl hover:bg-blue-400">
-            <a
-              class="font-semibold pl-4 pr-2 pt-1 pb-1"
-              href="https://www.linkedin.com/in/chris-langille-5943b8235/"
-            >
-              Connect With Me
-            </a>
-            <a href="https://www.linkedin.com/in/chris-langille-5943b8235/">
-              <img class="mr-2" src="images/icons/linkedin2.svg" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <!-- Footer -->
-    <footer class="text-white p-2 mt-auto">
-      <div class="grid grid-rows-2 mb-2">
-        <div class="flex justify-center">
-          <p class="text-gray-400">&copy 2024 Chris Langille. All rights reserved.</p>
-        </div>
-
-        <div class="flex justify-center">
-          <a class="ml-2 mr-2" href="https://github.com/chrislangille" target="_blank">
-            <img src="images/icons/github_icon.png" width="32" height="32"
-          /></a>
-
-          <a class="ml-2 mr-2" href="https://www.linkedin.com/in/chris-langille-5943b8235/" target="_blank">
-            <img src="images/icons/linkedin_icon.png" width="32" height="32"
-          /></a>
-        </div>
-      </div>
-    </footer>
+  <body>
+    <div class="container">
+      <h1>CHRIS LANGILLE</h1>
+      <!-- <p class="tagline">A mid-2000s style hub page with quick links to my developer profiles.</p> -->
+      <a class="btn" href="https://www.linkedin.com/in/chris-langille/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a class="btn" href="https://github.com/chrislangille" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <p class="note" id="typing"></p>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
